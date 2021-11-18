@@ -4,6 +4,6 @@ A minimal pink colorscheme for Vim fork from https://github.com/nikolvs/vim-sunb
 
 
 
-![screenshot](./img/sc1.png)
-![screenshot](./img/sc2.png)
+![screenshot](./img/shot1.png)
+![screenshot](./img/shot2.png)
 
