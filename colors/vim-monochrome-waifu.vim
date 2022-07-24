@@ -103,7 +103,7 @@ hi! link String           Constant
 
 "call s:h("Identifier",    {"fg": s:dark_blue})
 hi! link Identifier       Normal
-hi! link Function         Identifier
+call s:h("Function",      {"fg": s:norm, "gui": "bold"})
 
 call s:h("Statement",     {"fg": s:norm_subtle})
 hi! link Conditonal       Statement
@@ -120,7 +120,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:norm, "cterm" : "bold", "gui" : "bold"})
+call s:h("Type",          {"fg": s:pink, "cterm" : "bold", "gui" : "bold"})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
