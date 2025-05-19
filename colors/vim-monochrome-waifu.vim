@@ -47,6 +47,7 @@ let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 let s:background = &background
 
 if &background == "dark"
+  let s:fg              = s:white
   let s:bg              = s:black
   let s:bg_subtle       = s:lighter_black
   let s:bg_very_subtle  = s:subtle_black
@@ -59,6 +60,7 @@ if &background == "dark"
   let s:visual          = s:light_pink
   let s:yellow          = s:light_yellow
 else
+  let s:fg              = s:black
   let s:bg              = s:actual_white
   let s:bg_subtle       = s:light_gray
   let s:bg_very_subtle  = s:lightest_gray
@@ -239,6 +241,7 @@ call s:h("cType",         {"fg": s:pink, "cterm": "bold", "gui": "bold"})
 call s:h("cStorageClass", {"fg": s:norm_subtle, "cterm": "bold", "gui": "bold"})
 call s:h("cStructure",    {"fg": s:norm_subtle, "cterm": "bold", "gui": "bold"})
 call s:h("cppModifier",   {"fg": s:pink, "cterm": "bold", "gui": "bold"})
+
 
 hi link cppType                      cType
 hi link cppStructure                 cStructure
