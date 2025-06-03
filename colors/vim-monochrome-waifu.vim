@@ -105,7 +105,7 @@ hi! link String           Constant
 
 "call s:h("Identifier",    {"fg": s:dark_blue})
 hi! link Identifier       Normal
-call s:h("Function",      {"fg": s:norm, "gui": "bold"})
+call s:h("Function",      {"fg": s:norm })
 
 call s:h("Statement",     {"fg": s:norm_subtle})
 hi! link Conditonal       Statement
@@ -114,15 +114,15 @@ hi! link Label            Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
-call s:h("Operator",      {"fg": s:norm, "cterm": "bold", "gui": "bold"})
+call s:h("Operator",      {"fg": s:norm})
 
-call s:h("PreProc",     {"fg": s:norm_subtle})
+call s:h("PreProc",       {"fg": s:norm_subtle})
 hi! link Include          PreProc
 hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:pink, "cterm" : "bold", "gui" : "bold"})
+call s:h("Type",          {"fg": s:pink})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
@@ -237,10 +237,10 @@ hi link GitGutterChangeDelete       LineNr
 " ---- C++ ---------------------------------------------------------------------
 "
 
-call s:h("cType",         {"fg": s:pink, "cterm": "bold", "gui": "bold"})
-call s:h("cStorageClass", {"fg": s:norm_subtle, "cterm": "bold", "gui": "bold"})
-call s:h("cStructure",    {"fg": s:norm_subtle, "cterm": "bold", "gui": "bold"})
-call s:h("cppModifier",   {"fg": s:pink, "cterm": "bold", "gui": "bold"})
+call s:h("cType",         {"fg": s:pink})
+call s:h("cStorageClass", {"fg": s:norm_subtle})
+call s:h("cStructure",    {"fg": s:norm_subtle})
+call s:h("cppModifier",   {"fg": s:pink})
 
 
 hi link cppType                      cType
@@ -252,10 +252,10 @@ hi link cppStorageClass              cStorageClass
 " ---- Haskell -----------------------------------------------------------------
 "
 
-call s:h("haskellType",   {"fg": s:pink, "cterm": "bold", "gui": "bold"})
+call s:h("haskellType",   {"fg": s:pink})
 
 hi link haskellInfix                Operator
-call s:h("haskellImport", {"fg": s:norm_subtle, "cterm": "bold", "gui": "bold"})
+call s:h("haskellImport", {"fg": s:norm_subtle})
 "
 " ---- Rust---------------------------------------------------------------------
 "
